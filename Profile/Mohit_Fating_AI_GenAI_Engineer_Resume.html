@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -301,7 +302,7 @@
            ========================================================================== */
         @media print {
             @page {
-                size: A4 portrait;
+                /* size: A4 portrait; */
                 margin: 0.25in 0.34in;
             }
 
@@ -364,9 +365,13 @@
                 margin-left: 0;
             }
         }
-    
-.resume-view { display: block !important; }</style>
+
+        .resume-view {
+            display: block !important;
+        }
+    </style>
 </head>
+
 <body>
     <div class="action-bar no-print">
         <div class="action-top-row">
@@ -376,115 +381,169 @@
     </div>
     <main class="document-container">
 
-            <header>
-                <h1>Mohit Fating</h1>
-                <div class="role-headline">AI / Generative AI Engineer | Agentic RAG, LangGraph, LLMOps &amp; FastAPI Microservices</div>
-                <div class="contact-info">
-                    <span>Mumbai, Maharashtra, India</span>
-                    <span class="separator">|</span>
-                    <a href="tel:+918669711978" target="_blank" rel="noopener noreferrer">+91 8669711978</a>
-                    <span class="separator">|</span>
-                    <a href="mailto:fatingmohit@gmail.com" target="_blank" rel="noopener noreferrer">fatingmohit@gmail.com</a>
-                    <span class="separator">|</span>
-                    <a href="https://linkedin.com/in/mohitfating" target="_blank" rel="noopener noreferrer">linkedin.com/in/mohitfating</a>
-                    <span class="separator">|</span>
-                    <a href="https://github.com/MohitFating" target="_blank" rel="noopener noreferrer">github.com/MohitFating</a>
+        <header>
+            <h1>Mohit Fating</h1>
+            <div class="role-headline">AI / Generative AI Engineer | Agentic RAG, LangGraph, LLMOps &amp; FastAPI
+                Microservices</div>
+            <div class="contact-info">
+                <span>Mumbai, Maharashtra, India</span>
+                <span class="separator">|</span>
+                <a href="tel:+918669711978" target="_blank" rel="noopener noreferrer">+91 8669711978</a>
+                <span class="separator">|</span>
+                <a href="mailto:fatingmohit@gmail.com" target="_blank"
+                    rel="noopener noreferrer">fatingmohit@gmail.com</a>
+                <span class="separator">|</span>
+                <a href="https://linkedin.com/in/mohitfating" target="_blank"
+                    rel="noopener noreferrer">linkedin.com/in/mohitfating</a>
+                <span class="separator">|</span>
+                <a href="https://github.com/MohitFating" target="_blank"
+                    rel="noopener noreferrer">github.com/MohitFating</a>
+            </div>
+        </header>
+
+        <section>
+            <h2>Professional Summary</h2>
+            <p><strong>AI / Generative AI Engineer</strong> with 1 year of industry experience across financial data
+                engineering, NLP text classification, and production ML systems. Specializes in architecting secure,
+                observable <strong>Agentic RAG</strong> applications using stateful <strong>LangGraph</strong>
+                workflows, hybrid vector search (<strong>Qdrant</strong>), <strong>FlashRank</strong> cross-encoder
+                re-ranking, <strong>Nvidia NeMo Guardrails</strong>, and <strong>Portkey LLM Gateways</strong>. Proven
+                track record of deploying low-latency <strong>FastAPI</strong> services on <strong>AWS</strong> and
+                cutting distributed data lake query runtimes by <strong>50–70%</strong>.</p>
+        </section>
+
+        <section>
+            <h2>Technical Skills</h2>
+            <ul class="skills-list">
+                <li><strong>Generative AI &amp; Agentic Workflows:</strong> LangGraph, LangChain, Agentic RAG
+                    Architecture, Nvidia NeMo Guardrails (PII Masking, Prompt Injection Defense), Portkey LLM Gateway,
+                    FlashRank (Cross-Encoder Re-ranking), Prompt Engineering, LLM APIs (OpenAI, Gemini, Anthropic, Groq,
+                    Hugging Face)</li>
+                <li><strong>Vector Databases &amp; Unstructured Ingestion:</strong> Qdrant Vector Cloud, FAISS,
+                    ChromaDB, Gemini Embeddings, Sentence Transformers (all-MiniLM-L6-v2), Unstructured Document Parsing
+                    (PyPDF, PDFPlumber, BeautifulSoup, python-docx)</li>
+                <li><strong>LLMOps, Backend &amp; Observability:</strong> Python, FastAPI, Pydantic, Pydantic Logfire,
+                    LangSmith, Distributed Tracing, Semantic Caching, RESTful APIs, WebSockets, Streamlit</li>
+                <li><strong>Machine Learning &amp; NLP:</strong> Scikit-learn, XGBoost, Random Forest, Ensemble Methods,
+                    Text Classification, Feature Engineering, Model Evaluation, Pandas, NumPy</li>
+                <li><strong>Data Engineering &amp; Cloud Infrastructure:</strong> SQL, Trino, PostgreSQL, Apache
+                    Airflow, ETL Pipelines, AWS (EC2, S3), GCP (BigQuery, Colab), Docker, Git, GitLab</li>
+            </ul>
+        </section>
+
+        <section>
+            <h2>AI &amp; Agentic Systems Projects</h2>
+            <article class="entry">
+                <div class="entry-header">
+                    <span class="entry-title-left">Production-Grade Secure &amp; Scalable Agentic RAG Platform <span
+                            class="entry-role">— LangGraph, FastAPI, Qdrant, NeMo Guardrails, Portkey</span></span>
+                    <span class="entry-meta-right"><time datetime="2026-04">Apr 2026</time> – <time
+                            datetime="2026-08">Aug 2026</time></span>
                 </div>
-            </header>
-
-            <section>
-                <h2>Professional Summary</h2>
-                <p><strong>AI / Generative AI Engineer</strong> with 1 year of industry experience across financial data engineering, NLP text classification, and production ML systems. Specializes in architecting secure, observable <strong>Agentic RAG</strong> applications using stateful <strong>LangGraph</strong> workflows, hybrid vector search (<strong>Qdrant</strong>), <strong>FlashRank</strong> cross-encoder re-ranking, <strong>Nvidia NeMo Guardrails</strong>, and <strong>Portkey LLM Gateways</strong>. Proven track record of deploying low-latency <strong>FastAPI</strong> services on <strong>AWS</strong> and cutting distributed data lake query runtimes by <strong>50–70%</strong>.</p>
-            </section>
-
-            <section>
-                <h2>Technical Skills</h2>
-                <ul class="skills-list">
-                    <li><strong>Generative AI &amp; Agentic Workflows:</strong> LangGraph, LangChain, Agentic RAG Architecture, Nvidia NeMo Guardrails (PII Masking, Prompt Injection Defense), Portkey LLM Gateway, FlashRank (Cross-Encoder Re-ranking), Prompt Engineering, LLM APIs (OpenAI, Gemini, Anthropic, Groq, Hugging Face)</li>
-                    <li><strong>Vector Databases &amp; Unstructured Ingestion:</strong> Qdrant Vector Cloud, FAISS, ChromaDB, Gemini Embeddings, Sentence Transformers (all-MiniLM-L6-v2), Unstructured Document Parsing (PyPDF, PDFPlumber, BeautifulSoup, python-docx)</li>
-                    <li><strong>LLMOps, Backend &amp; Observability:</strong> Python, FastAPI, Pydantic, Pydantic Logfire, LangSmith, Distributed Tracing, Semantic Caching, RESTful APIs, WebSockets, Streamlit</li>
-                    <li><strong>Machine Learning &amp; NLP:</strong> Scikit-learn, XGBoost, Random Forest, Ensemble Methods, Text Classification, Feature Engineering, Model Evaluation, Pandas, NumPy</li>
-                    <li><strong>Data Engineering &amp; Cloud Infrastructure:</strong> SQL, Trino, PostgreSQL, Apache Airflow, ETL Pipelines, AWS (EC2, S3), GCP (BigQuery, Colab), Docker, Git, GitLab</li>
+                <ul>
+                    <li>Engineered a stateful multi-node <strong>LangGraph</strong> workflow (Planner, Retriever,
+                        Responder) with <strong>Pydantic</strong> schema validation and checkpointers for multi-turn
+                        memory, dynamically routing non-technical queries away from vector search to cut token usage and
+                        latency.</li>
+                    <li>Built a multi-format document ingestion pipeline (PDF, DOCX, PPTX, HTML) feeding <strong>Qdrant
+                            Vector Cloud</strong> with <strong>Gemini Embeddings</strong>, automated failover to
+                        <strong>Sentence Transformers</strong> (all-MiniLM-L6-v2) during API rate limits, and
+                        <strong>FlashRank</strong> cross-encoder re-ranking to reduce retrieval noise before LLM
+                        synthesis.</li>
+                    <li>Enforced enterprise AI safety via <strong>Nvidia NeMo Guardrails</strong> input/output rails to
+                        detect prompt injection, mask PII, and reject off-topic or harmful prompts; deployed a
+                        <strong>Portkey LLM Gateway</strong> for multi-provider fallbacks, load balancing, and semantic
+                        caching.</li>
+                    <li>Implemented end-to-end distributed tracing with <strong>Pydantic Logfire</strong> and
+                        <strong>LangSmith</strong>, exposing validated <strong>FastAPI</strong> REST endpoints and an
+                        interactive <strong>Streamlit</strong> UI for real-time querying and guardrail monitoring.</li>
                 </ul>
-            </section>
+            </article>
+        </section>
 
-            <section>
-                <h2>AI &amp; Agentic Systems Projects</h2>
-                <article class="entry">
-                    <div class="entry-header">
-                        <span class="entry-title-left">Production-Grade Secure &amp; Scalable Agentic RAG Platform <span class="entry-role">— LangGraph, FastAPI, Qdrant, NeMo Guardrails, Portkey</span></span>
-                        <span class="entry-meta-right"><time datetime="2026-04">Apr 2026</time> – <time datetime="2026-08">Aug 2026</time></span>
-                    </div>
-                    <ul>
-                        <li>Engineered a stateful multi-node <strong>LangGraph</strong> workflow (Planner, Retriever, Responder) with <strong>Pydantic</strong> schema validation and checkpointers for multi-turn memory, dynamically routing non-technical queries away from vector search to cut token usage and latency.</li>
-                        <li>Built a multi-format document ingestion pipeline (PDF, DOCX, PPTX, HTML) feeding <strong>Qdrant Vector Cloud</strong> with <strong>Gemini Embeddings</strong>, automated failover to <strong>Sentence Transformers</strong> (all-MiniLM-L6-v2) during API rate limits, and <strong>FlashRank</strong> cross-encoder re-ranking to reduce retrieval noise before LLM synthesis.</li>
-                        <li>Enforced enterprise AI safety via <strong>Nvidia NeMo Guardrails</strong> input/output rails to detect prompt injection, mask PII, and reject off-topic or harmful prompts; deployed a <strong>Portkey LLM Gateway</strong> for multi-provider fallbacks, load balancing, and semantic caching.</li>
-                        <li>Implemented end-to-end distributed tracing with <strong>Pydantic Logfire</strong> and <strong>LangSmith</strong>, exposing validated <strong>FastAPI</strong> REST endpoints and an interactive <strong>Streamlit</strong> UI for real-time querying and guardrail monitoring.</li>
-                    </ul>
-                </article>
-            </section>
-
-            <section>
-                <h2>Professional Experience</h2>
-                <article class="entry">
-                    <div class="entry-header">
-                        <span class="entry-title-left">Drona Pay <span class="entry-role">— Data Analyst</span></span>
-                        <span class="entry-meta-right">Mumbai, Maharashtra | <time datetime="2025-08">Aug 2025</time> – <time datetime="2026-02">Feb 2026</time></span>
-                    </div>
-                    <ul>
-                        <li>Prototyped an <strong>NLP-based transaction analysis pipeline</strong> on unstructured payment descriptions for automated pattern detection and classification across financial records.</li>
-                        <li>Optimized high-volume distributed <strong>Trino SQL</strong> queries on the financial data lake, cutting execution time by <strong>50–70%</strong> and tuning dashboard queries to improve UI reporting speed by <strong>~50%</strong>.</li>
-                        <li>Designed client-specific analytical datasets and KPI reports supporting regulatory audits and compliance reviews, and conducted root cause analysis (RCA) to implement lasting data quality fixes.</li>
-                    </ul>
-                </article>
-
-                <article class="entry">
-                    <div class="entry-header">
-                        <span class="entry-title-left">Astron Financial Advisors <span class="entry-role">— AI/ML Developer Intern (Dynamic Hotel Pricing System)</span></span>
-                        <span class="entry-meta-right">Mumbai, Maharashtra | <time datetime="2025-06">Jun 2025</time> – <time datetime="2025-07">Jul 2025</time></span>
-                    </div>
-                    <ul>
-                        <li>Built and deployed a production-ready <strong>XGBoost</strong> dynamic hotel pricing engine with a <strong>FastAPI</strong> backend and <strong>Streamlit</strong> frontend dashboard, enabling real-time AI-driven pricing automation.</li>
-                        <li>Performed feature engineering on historical booking data to capture demand patterns, improving model accuracy and automated revenue optimization.</li>
-                    </ul>
-                </article>
-
-                <article class="entry">
-                    <div class="entry-header">
-                        <span class="entry-title-left">CreditXchange.AI <span class="entry-role">— Data Science Intern (Algorithmic Trading)</span></span>
-                        <span class="entry-meta-right">Mumbai, Maharashtra | <time datetime="2025-02">Feb 2025</time> – <time datetime="2025-06">Jun 2025</time></span>
-                    </div>
-                    <ul>
-                        <li>Engineered automated data pipelines ingesting live API feeds and <strong>WebSocket</strong> streams across <strong>35,000+ financial instruments</strong> to power real-time market predictions.</li>
-                        <li>Developed ensemble ML models (<strong>XGBoost, Random Forest</strong>) for intraday and positional trading signals and deployed the real-time system on <strong>AWS EC2</strong> with <strong>99.9% uptime</strong> and reduced execution latency.</li>
-                    </ul>
-                </article>
-            </section>
-
-            <section>
-                <h2>Education</h2>
-                <div class="edu-item">
-                    <span><strong>Master of Computer Applications (MCA) — AI &amp; Machine Learning</strong>, Mumbai University</span>
-                    <span class="meta-right">2022 – 2024 | CGPA: 7.23</span>
+        <section>
+            <h2>Professional Experience</h2>
+            <article class="entry">
+                <div class="entry-header">
+                    <span class="entry-title-left">Drona Pay <span class="entry-role">— Data Analyst</span></span>
+                    <span class="entry-meta-right">Mumbai, Maharashtra | <time datetime="2025-08">Aug 2025</time> –
+                        <time datetime="2026-02">Feb 2026</time></span>
                 </div>
-                <div class="edu-item">
-                    <span><strong>Bachelor of Computer Applications (BCA)</strong>, Rashtrasant Tukadoji Maharaj Nagpur University</span>
-                    <span class="meta-right">2018 – 2021 | Percentage: 70.51%</span>
-                </div>
-            </section>
+                <ul>
+                    <li>Prototyped an <strong>NLP-based transaction analysis pipeline</strong> on unstructured payment
+                        descriptions for automated pattern detection and classification across financial records.</li>
+                    <li>Optimized high-volume distributed <strong>Trino SQL</strong> queries on the financial data lake,
+                        cutting execution time by <strong>50–70%</strong> and tuning dashboard queries to improve UI
+                        reporting speed by <strong>~50%</strong>.</li>
+                    <li>Designed client-specific analytical datasets and KPI reports supporting regulatory audits and
+                        compliance reviews, and conducted root cause analysis (RCA) to implement lasting data quality
+                        fixes.</li>
+                </ul>
+            </article>
 
-            <section>
-                <h2>Certifications</h2>
-                <div class="cert-item">
-                    <span><strong>Machine Learning Comprehensive Certification</strong> — Python, ML Algorithms, Neural Networks, Deep Learning</span>
-                    <span class="meta-right">Feb 2024</span>
+            <article class="entry">
+                <div class="entry-header">
+                    <span class="entry-title-left">Astron Financial Advisors <span class="entry-role">— AI/ML Developer
+                            Intern (Dynamic Hotel Pricing System)</span></span>
+                    <span class="entry-meta-right">Mumbai, Maharashtra | <time datetime="2025-06">Jun 2025</time> –
+                        <time datetime="2025-07">Jul 2025</time></span>
                 </div>
-                <div class="cert-item">
-                    <span><strong>Data Engineering Foundations Certification</strong> — SQL, Python, Cloud Platforms, Data Pipelines, ETL, Airflow</span>
-                    <span class="meta-right">Apr 2025</span>
+                <ul>
+                    <li>Built and deployed a production-ready <strong>XGBoost</strong> dynamic hotel pricing engine with
+                        a <strong>FastAPI</strong> backend and <strong>Streamlit</strong> frontend dashboard, enabling
+                        real-time AI-driven pricing automation.</li>
+                    <li>Performed feature engineering on historical booking data to capture demand patterns, improving
+                        model accuracy and automated revenue optimization.</li>
+                </ul>
+            </article>
+
+            <article class="entry">
+                <div class="entry-header">
+                    <span class="entry-title-left">CreditXchange.AI <span class="entry-role">— Data Science Intern
+                            (Algorithmic Trading)</span></span>
+                    <span class="entry-meta-right">Mumbai, Maharashtra | <time datetime="2025-02">Feb 2025</time> –
+                        <time datetime="2025-06">Jun 2025</time></span>
                 </div>
-            </section>
-        
+                <ul>
+                    <li>Engineered automated data pipelines ingesting live API feeds and <strong>WebSocket</strong>
+                        streams across <strong>35,000+ financial instruments</strong> to power real-time market
+                        predictions.</li>
+                    <li>Developed ensemble ML models (<strong>XGBoost, Random Forest</strong>) for intraday and
+                        positional trading signals and deployed the real-time system on <strong>AWS EC2</strong> with
+                        <strong>99.9% uptime</strong> and reduced execution latency.</li>
+                </ul>
+            </article>
+        </section>
+
+        <section>
+            <h2>Education</h2>
+            <div class="edu-item">
+                <span><strong>Master of Computer Applications (MCA) — AI &amp; Machine Learning</strong>, Mumbai
+                    University</span>
+                <span class="meta-right">2022 – 2024 | CGPA: 7.23</span>
+            </div>
+            <div class="edu-item">
+                <span><strong>Bachelor of Computer Applications (BCA)</strong>, Rashtrasant Tukadoji Maharaj Nagpur
+                    University</span>
+                <span class="meta-right">2018 – 2021 | Percentage: 70.51%</span>
+            </div>
+        </section>
+
+        <section>
+            <h2>Certifications</h2>
+            <div class="cert-item">
+                <span><strong>Machine Learning Comprehensive Certification</strong> — Python, ML Algorithms, Neural
+                    Networks, Deep Learning</span>
+                <span class="meta-right">Feb 2024</span>
+            </div>
+            <div class="cert-item">
+                <span><strong>Data Engineering Foundations Certification</strong> — SQL, Python, Cloud Platforms, Data
+                    Pipelines, ETL, Airflow</span>
+                <span class="meta-right">Apr 2025</span>
+            </div>
+        </section>
+
     </main>
 </body>
+
 </html>
