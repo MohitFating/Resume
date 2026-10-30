@@ -1,0 +1,490 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mohit Fating AI GenAI Engineer Resume</title>
+    <style>
+        /* ==========================================================================
+           Strict 1-Page A4 Calibration — Screen & Print Locked to 1 Page
+           ========================================================================== */
+        :root {
+            --text-primary: #111827;
+            --text-secondary: #374151;
+            --accent-color: #1e3a8a;
+            --accent-hover: #172554;
+            --border-color: #d1d5db;
+            --rule-color: #111827;
+            --bg-page: #f3f4f6;
+            --bg-sheet: #ffffff;
+        }
+
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Calibri', 'Segoe UI', -apple-system, BlinkMacSystemFont, Roboto, Helvetica, Arial, sans-serif;
+            font-size: 9.5pt;
+            line-height: 1.22;
+            color: var(--text-primary);
+            background-color: var(--bg-page);
+            margin: 0;
+            padding: 12px;
+            -webkit-font-smoothing: antialiased;
+        }
+
+        /* Top Interactive Control Bar (Hidden When Printing / Saving PDF) */
+        .action-bar {
+            max-width: 8.27in;
+            margin: 0 auto 12px auto;
+            background: #ffffff;
+            padding: 10px 14px;
+            border-radius: 8px;
+            border: 1px solid var(--border-color);
+            box-shadow: 0 2px 6px rgba(0, 0, 0, 0.06);
+            display: flex;
+            flex-direction: column;
+            gap: 8px;
+        }
+
+        .action-top-row {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            flex-wrap: wrap;
+            gap: 8px;
+        }
+
+        .action-bar-title {
+            font-size: 9.5pt;
+            font-weight: 700;
+            color: var(--text-primary);
+        }
+
+        .action-bar-hint {
+            font-size: 8.5pt;
+            color: var(--text-secondary);
+        }
+
+        .role-tabs {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 6px;
+        }
+
+        .tab-btn {
+            padding: 6px 11px;
+            font-size: 8.8pt;
+            font-family: inherit;
+            font-weight: 600;
+            color: var(--text-secondary);
+            background-color: #f3f4f6;
+            border: 1px solid #d1d5db;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: all 0.15s ease;
+        }
+
+        .tab-btn:hover {
+            background-color: #e5e7eb;
+            color: #111827;
+        }
+
+        .tab-btn.active {
+            background-color: var(--accent-color);
+            color: #ffffff;
+            border-color: var(--accent-color);
+        }
+
+        .action-buttons {
+            display: flex;
+            gap: 8px;
+            flex-wrap: wrap;
+        }
+
+        .btn {
+            padding: 6px 12px;
+            font-size: 8.8pt;
+            font-family: inherit;
+            font-weight: 600;
+            color: #ffffff;
+            background-color: #059669;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.15s ease;
+        }
+
+        .btn:hover {
+            background-color: #047857;
+        }
+
+        .btn-secondary {
+            background-color: #374151;
+        }
+
+        .btn-secondary:hover {
+            background-color: #1f2937;
+        }
+
+        /* A4 Paper Container */
+        .document-container {
+            max-width: 8.27in;
+            margin: 0 auto;
+            background: var(--bg-sheet);
+            padding: 0.28in 0.36in;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+            border: 1px solid #e5e7eb;
+        }
+
+        .resume-view {
+            display: none;
+        }
+
+        .resume-view.active {
+            display: block;
+        }
+
+        /* Header & Contact Information */
+        header {
+            text-align: center;
+            margin-bottom: 4px;
+        }
+
+        h1 {
+            font-size: 14.5pt;
+            font-weight: 700;
+            margin: 0 0 1px 0;
+            text-transform: uppercase;
+            letter-spacing: 0.6px;
+            color: #000000;
+            line-height: 1.15;
+        }
+
+        .role-headline {
+            font-size: 9.3pt;
+            font-weight: 700;
+            color: var(--accent-color);
+            margin: 0 0 2px 0;
+            letter-spacing: 0.15px;
+        }
+
+        .contact-info {
+            font-size: 8.8pt;
+            line-height: 1.18;
+            color: var(--text-secondary);
+        }
+
+        .contact-info a {
+            color: var(--text-primary);
+            text-decoration: none;
+        }
+
+        .contact-info a:hover {
+            color: var(--accent-color);
+            text-decoration: underline;
+        }
+
+        .separator {
+            margin: 0 4px;
+            color: #9ca3af;
+        }
+
+        /* Section Headings */
+        section {
+            margin-top: 5px;
+        }
+
+        h2 {
+            font-size: 9.6pt;
+            font-weight: 700;
+            text-transform: uppercase;
+            border-bottom: 1px solid var(--rule-color);
+            margin: 0 0 2.5px 0;
+            padding-bottom: 1px;
+            letter-spacing: 0.4px;
+            color: #000000;
+        }
+
+        p {
+            margin: 0 0 3px 0;
+            text-align: left;
+        }
+
+        /* Compact Skills List */
+        .skills-list {
+            list-style: none;
+            padding-left: 0;
+            margin: 0;
+        }
+
+        .skills-list li {
+            margin-bottom: 1.5px;
+            text-align: left;
+        }
+
+        /* Single-Line Compact Experience & Project Headers */
+        .entry {
+            margin-bottom: 3.5px;
+        }
+
+        .entry:last-child {
+            margin-bottom: 0;
+        }
+
+        .entry-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: baseline;
+            font-size: 9.5pt;
+            color: #000000;
+            margin-bottom: 1.5px;
+        }
+
+        .entry-title-left {
+            font-weight: 700;
+        }
+
+        .entry-role {
+            font-style: italic;
+            font-weight: 600;
+            color: #1f2937;
+        }
+
+        .entry-meta-right {
+            font-size: 8.9pt;
+            font-weight: 600;
+            color: var(--text-secondary);
+            white-space: nowrap;
+            margin-left: 8px;
+        }
+
+        ul {
+            margin: 0;
+            padding-left: 14px;
+        }
+
+        li {
+            margin-bottom: 1.2px;
+            text-align: left;
+        }
+
+        li:last-child {
+            margin-bottom: 0;
+        }
+
+        /* Compact Education & Certifications */
+        .edu-item,
+        .cert-item {
+            display: flex;
+            justify-content: space-between;
+            align-items: baseline;
+            margin-bottom: 1.5px;
+        }
+
+        .edu-item:last-child,
+        .cert-item:last-child {
+            margin-bottom: 0;
+        }
+
+        .meta-right {
+            white-space: nowrap;
+            font-size: 8.9pt;
+            font-weight: 600;
+            color: var(--text-secondary);
+            margin-left: 10px;
+        }
+
+        /* ==========================================================================
+           Strict 1-Page Print Rules — Prevents Spillover Across All Browsers
+           ========================================================================== */
+        @media print {
+            @page {
+                size: A4 portrait;
+                margin: 0.25in 0.34in;
+            }
+
+            html,
+            body {
+                background-color: #ffffff;
+                padding: 0;
+                margin: 0;
+                font-size: 9.3pt;
+                line-height: 1.19;
+                color: #000000;
+            }
+
+            .document-container {
+                box-shadow: none;
+                border: none;
+                padding: 0;
+                margin: 0;
+                width: 100%;
+                max-width: 100%;
+            }
+
+            .role-headline {
+                color: #000000;
+            }
+
+            .contact-info a {
+                color: #000000;
+                text-decoration: none;
+            }
+
+            section,
+            .entry {
+                break-inside: avoid;
+                page-break-inside: avoid;
+            }
+
+            .no-print {
+                display: none !important;
+            }
+        }
+
+        @media (max-width: 640px) {
+            body {
+                padding: 6px;
+            }
+
+            .document-container {
+                padding: 12px;
+            }
+
+            .entry-header,
+            .edu-item,
+            .cert-item {
+                flex-direction: column;
+            }
+
+            .entry-meta-right,
+            .meta-right {
+                margin-left: 0;
+            }
+        }
+    
+.resume-view { display: block !important; }</style>
+</head>
+<body>
+    <div class="action-bar no-print">
+        <div class="action-top-row">
+            <div class="action-bar-title">Mohit Fating AI GenAI Engineer Resume</div>
+            <button type="button" class="btn" onclick="window.print()">Save / Print 1-Page PDF</button>
+        </div>
+    </div>
+    <main class="document-container">
+
+            <header>
+                <h1>Mohit Fating</h1>
+                <div class="role-headline">AI / Generative AI Engineer | Agentic RAG, LangGraph, LLMOps &amp; FastAPI Microservices</div>
+                <div class="contact-info">
+                    <span>Mumbai, Maharashtra, India</span>
+                    <span class="separator">|</span>
+                    <a href="tel:+918669711978" target="_blank" rel="noopener noreferrer">+91 8669711978</a>
+                    <span class="separator">|</span>
+                    <a href="mailto:fatingmohit@gmail.com" target="_blank" rel="noopener noreferrer">fatingmohit@gmail.com</a>
+                    <span class="separator">|</span>
+                    <a href="https://linkedin.com/in/mohitfating" target="_blank" rel="noopener noreferrer">linkedin.com/in/mohitfating</a>
+                    <span class="separator">|</span>
+                    <a href="https://github.com/MohitFating" target="_blank" rel="noopener noreferrer">github.com/MohitFating</a>
+                </div>
+            </header>
+
+            <section>
+                <h2>Professional Summary</h2>
+                <p><strong>AI / Generative AI Engineer</strong> with 1 year of industry experience across financial data engineering, NLP text classification, and production ML systems. Specializes in architecting secure, observable <strong>Agentic RAG</strong> applications using stateful <strong>LangGraph</strong> workflows, hybrid vector search (<strong>Qdrant</strong>), <strong>FlashRank</strong> cross-encoder re-ranking, <strong>Nvidia NeMo Guardrails</strong>, and <strong>Portkey LLM Gateways</strong>. Proven track record of deploying low-latency <strong>FastAPI</strong> services on <strong>AWS</strong> and cutting distributed data lake query runtimes by <strong>50–70%</strong>.</p>
+            </section>
+
+            <section>
+                <h2>Technical Skills</h2>
+                <ul class="skills-list">
+                    <li><strong>Generative AI &amp; Agentic Workflows:</strong> LangGraph, LangChain, Agentic RAG Architecture, Nvidia NeMo Guardrails (PII Masking, Prompt Injection Defense), Portkey LLM Gateway, FlashRank (Cross-Encoder Re-ranking), Prompt Engineering, LLM APIs (OpenAI, Gemini, Anthropic, Groq, Hugging Face)</li>
+                    <li><strong>Vector Databases &amp; Unstructured Ingestion:</strong> Qdrant Vector Cloud, FAISS, ChromaDB, Gemini Embeddings, Sentence Transformers (all-MiniLM-L6-v2), Unstructured Document Parsing (PyPDF, PDFPlumber, BeautifulSoup, python-docx)</li>
+                    <li><strong>LLMOps, Backend &amp; Observability:</strong> Python, FastAPI, Pydantic, Pydantic Logfire, LangSmith, Distributed Tracing, Semantic Caching, RESTful APIs, WebSockets, Streamlit</li>
+                    <li><strong>Machine Learning &amp; NLP:</strong> Scikit-learn, XGBoost, Random Forest, Ensemble Methods, Text Classification, Feature Engineering, Model Evaluation, Pandas, NumPy</li>
+                    <li><strong>Data Engineering &amp; Cloud Infrastructure:</strong> SQL, Trino, PostgreSQL, Apache Airflow, ETL Pipelines, AWS (EC2, S3), GCP (BigQuery, Colab), Docker, Git, GitLab</li>
+                </ul>
+            </section>
+
+            <section>
+                <h2>AI &amp; Agentic Systems Projects</h2>
+                <article class="entry">
+                    <div class="entry-header">
+                        <span class="entry-title-left">Production-Grade Secure &amp; Scalable Agentic RAG Platform <span class="entry-role">— LangGraph, FastAPI, Qdrant, NeMo Guardrails, Portkey</span></span>
+                        <span class="entry-meta-right"><time datetime="2026-04">Apr 2026</time> – <time datetime="2026-08">Aug 2026</time></span>
+                    </div>
+                    <ul>
+                        <li>Engineered a stateful multi-node <strong>LangGraph</strong> workflow (Planner, Retriever, Responder) with <strong>Pydantic</strong> schema validation and checkpointers for multi-turn memory, dynamically routing non-technical queries away from vector search to cut token usage and latency.</li>
+                        <li>Built a multi-format document ingestion pipeline (PDF, DOCX, PPTX, HTML) feeding <strong>Qdrant Vector Cloud</strong> with <strong>Gemini Embeddings</strong>, automated failover to <strong>Sentence Transformers</strong> (all-MiniLM-L6-v2) during API rate limits, and <strong>FlashRank</strong> cross-encoder re-ranking to reduce retrieval noise before LLM synthesis.</li>
+                        <li>Enforced enterprise AI safety via <strong>Nvidia NeMo Guardrails</strong> input/output rails to detect prompt injection, mask PII, and reject off-topic or harmful prompts; deployed a <strong>Portkey LLM Gateway</strong> for multi-provider fallbacks, load balancing, and semantic caching.</li>
+                        <li>Implemented end-to-end distributed tracing with <strong>Pydantic Logfire</strong> and <strong>LangSmith</strong>, exposing validated <strong>FastAPI</strong> REST endpoints and an interactive <strong>Streamlit</strong> UI for real-time querying and guardrail monitoring.</li>
+                    </ul>
+                </article>
+            </section>
+
+            <section>
+                <h2>Professional Experience</h2>
+                <article class="entry">
+                    <div class="entry-header">
+                        <span class="entry-title-left">Drona Pay <span class="entry-role">— Data Analyst</span></span>
+                        <span class="entry-meta-right">Mumbai, Maharashtra | <time datetime="2025-08">Aug 2025</time> – <time datetime="2026-02">Feb 2026</time></span>
+                    </div>
+                    <ul>
+                        <li>Prototyped an <strong>NLP-based transaction analysis pipeline</strong> on unstructured payment descriptions for automated pattern detection and classification across financial records.</li>
+                        <li>Optimized high-volume distributed <strong>Trino SQL</strong> queries on the financial data lake, cutting execution time by <strong>50–70%</strong> and tuning dashboard queries to improve UI reporting speed by <strong>~50%</strong>.</li>
+                        <li>Designed client-specific analytical datasets and KPI reports supporting regulatory audits and compliance reviews, and conducted root cause analysis (RCA) to implement lasting data quality fixes.</li>
+                    </ul>
+                </article>
+
+                <article class="entry">
+                    <div class="entry-header">
+                        <span class="entry-title-left">Astron Financial Advisors <span class="entry-role">— AI/ML Developer Intern (Dynamic Hotel Pricing System)</span></span>
+                        <span class="entry-meta-right">Mumbai, Maharashtra | <time datetime="2025-06">Jun 2025</time> – <time datetime="2025-07">Jul 2025</time></span>
+                    </div>
+                    <ul>
+                        <li>Built and deployed a production-ready <strong>XGBoost</strong> dynamic hotel pricing engine with a <strong>FastAPI</strong> backend and <strong>Streamlit</strong> frontend dashboard, enabling real-time AI-driven pricing automation.</li>
+                        <li>Performed feature engineering on historical booking data to capture demand patterns, improving model accuracy and automated revenue optimization.</li>
+                    </ul>
+                </article>
+
+                <article class="entry">
+                    <div class="entry-header">
+                        <span class="entry-title-left">CreditXchange.AI <span class="entry-role">— Data Science Intern (Algorithmic Trading)</span></span>
+                        <span class="entry-meta-right">Mumbai, Maharashtra | <time datetime="2025-02">Feb 2025</time> – <time datetime="2025-06">Jun 2025</time></span>
+                    </div>
+                    <ul>
+                        <li>Engineered automated data pipelines ingesting live API feeds and <strong>WebSocket</strong> streams across <strong>35,000+ financial instruments</strong> to power real-time market predictions.</li>
+                        <li>Developed ensemble ML models (<strong>XGBoost, Random Forest</strong>) for intraday and positional trading signals and deployed the real-time system on <strong>AWS EC2</strong> with <strong>99.9% uptime</strong> and reduced execution latency.</li>
+                    </ul>
+                </article>
+            </section>
+
+            <section>
+                <h2>Education</h2>
+                <div class="edu-item">
+                    <span><strong>Master of Computer Applications (MCA) — AI &amp; Machine Learning</strong>, Mumbai University</span>
+                    <span class="meta-right">2022 – 2024 | CGPA: 7.23</span>
+                </div>
+                <div class="edu-item">
+                    <span><strong>Bachelor of Computer Applications (BCA)</strong>, Rashtrasant Tukadoji Maharaj Nagpur University</span>
+                    <span class="meta-right">2018 – 2021 | Percentage: 70.51%</span>
+                </div>
+            </section>
+
+            <section>
+                <h2>Certifications</h2>
+                <div class="cert-item">
+                    <span><strong>Machine Learning Comprehensive Certification</strong> — Python, ML Algorithms, Neural Networks, Deep Learning</span>
+                    <span class="meta-right">Feb 2024</span>
+                </div>
+                <div class="cert-item">
+                    <span><strong>Data Engineering Foundations Certification</strong> — SQL, Python, Cloud Platforms, Data Pipelines, ETL, Airflow</span>
+                    <span class="meta-right">Apr 2025</span>
+                </div>
+            </section>
+        
+    </main>
+</body>
+</html>
